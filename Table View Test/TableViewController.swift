@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 
 class TableViewController: UITableViewController {
@@ -22,7 +23,7 @@ class TableViewController: UITableViewController {
     let restaurantName3 = "Five & Dime"
     
     
-    let restaurant1 = ["dice1","dice5"]
+    let restaurant1 = ["dice1","dice1"]
     let restaurant2 = "dice5"
     let restaurant3 = "Hello World"
     
@@ -70,6 +71,13 @@ class TableViewController: UITableViewController {
         cell.messageBody.text = itemArray[indexPath.row]
         cell.avatarImageView.image = UIImage(named: pictureArray[indexPath.row])
         cell.promotionDescription.text = restaurantNameArray[indexPath.row]
+        
+        if let color = UIColor.flatWhite()?.darken(byPercentage: (CGFloat(indexPath.row)/CGFloat(itemArray.count))/2) {
+            
+            cell.backgroundColor = color
+            cell.messageBody.textColor = UIColor.init(contrastingBlackOrWhiteColorOn: color, isFlat: true)
+            cell.promotionDescription.textColor = UIColor.init(contrastingBlackOrWhiteColorOn: color, isFlat: true)
+        }
         
         return cell
         
