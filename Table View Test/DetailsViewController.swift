@@ -12,16 +12,24 @@ class DetailsViewController: UIViewController {
 
     var dataFieldOne = ""
     var pictureOne = ""
+    var dataFieldTwo = ""
+    var dataFieldThree = ""
     
     @IBOutlet weak var textFieldOne: UITextField!
     @IBOutlet weak var imageViewOne: UIImageView!
+    @IBOutlet weak var textFieldTwo: UITextField!
+    @IBOutlet weak var textFieldThree: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         textFieldOne.text = dataFieldOne
         imageViewOne.image = UIImage(named:pictureOne)
-
+        textFieldTwo.text = dataFieldTwo
+        textFieldThree.text = dataFieldThree
+        
+        
     }
     
 }

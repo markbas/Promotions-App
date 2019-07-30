@@ -34,6 +34,18 @@ class TableViewController: UITableViewController {
     var text2 = ""
     var text3 = ""
     
+    var when1 = ""
+    var when2 = ""
+    var when3 = ""
+    
+    var details1 = ""
+    var details2 = ""
+    var details3 = ""
+    
+    var address1 = ""
+    var address2 = ""
+    var address3 = ""
+    
     
 // TABLE VIEW DATA:
     
@@ -50,7 +62,12 @@ class TableViewController: UITableViewController {
     
     lazy var textArray: [String] = {[unowned self] in return [self.text1, self.text2, self.text3] }()
     
+    lazy var whenArray: [String] = {[unowned self] in return [self.when1, self.when2, self.when3] }()
 
+    lazy var detailsArray: [String] = {[unowned self] in return [self.details1, self.details2, self.details3] }()
+    
+    lazy var addressArray: [String] = {[unowned self] in return [self.address1, self.address2, self.address3] }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,9 +113,14 @@ class TableViewController: UITableViewController {
         
         if let indexPath = tableView.indexPathForSelectedRow {
     
-        destinationVC.dataFieldOne = textArray[indexPath.row]
+        destinationVC.dataFieldOne = whenArray[indexPath.row]
     
         destinationVC.pictureOne = pictureArray[indexPath.row]
+            
+        destinationVC.dataFieldTwo = detailsArray[indexPath.row]
+            
+        destinationVC.dataFieldThree = addressArray[indexPath.row]
+            
     }
     
 }

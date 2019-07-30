@@ -12,14 +12,13 @@ class SelectionViewController: UIViewController {
 
    // var lunchArray = ["dice1", "dice5", "Hello World  Hello World Hello World Hello World Hello World", "Go Gators", "Hello World", "Go Gators", "Hello World", "Go Gators", "Hello World", "Go Gators", "Hello World", "Go Gators", "Hello World", "Go Gators", "Hello World", "Go Gators", "Hello World", "Go Gators", "Hello World Hello World"]
     
-    let lunchArrayOne = ["Viet Nom Nom", "dice1", "10% Off Bahn Mi"]
-    let lunchArrayTwo = ["Bat 17", "dice5", "Half Price Sandwiches"]
-    let lunchArrayThree = ["Taco Diablo", "dice1", "20% Off Tacos"]
+    let lunchArrayOne = ["Viet Nom Nom", "dice1", "10% Off Bahn Mi", "11am-3pm", "10% off any Bahn Mi on the menu", "1234 Sherman Dr"]
+    let lunchArrayTwo = ["Bat 17", "dice5", "Half Price Sandwiches", "10:30am-2:30pm", "50% off any sandwich under $15", "5678 Chicago St"]
+    let lunchArrayThree = ["Taco Diablo", "dice1", "20% Off Tacos", "11am-2:30pm", "20% off any order of a 3 taco combo", "901 Davis St"]
     
-    let dinnerArrayOne = ["Giordanos", "dice5", "25% Off deep dish"]
-    let dinnerArrayTwo = ["Cozy Noodles", "dice1", "$10 Noodle Dishes"]
-    let dinnerArrayThree = ["Little Mexican Cafe", "dice5", "Half Price Tacos"]
-    
+    let dinnerArrayOne = ["Giordanos", "dice5", "25% Off deep dish", "5pm-11pm", "25% off any Chicago Style pizza", "1357 Chicago St"]
+    let dinnerArrayTwo = ["Cozy Noodles", "dice1", "$10 Noodle Dishes", "5:30pm-10:30pm", "All noodle dishes on the menu only $10", "2468 Davis St"]
+    let dinnerArrayThree = ["Little Mexican Cafe", "dice5", "Half Price Tacos", "6pm-10pm", "All tacos 50% off", "2222 Foster St"]
     
     @IBOutlet weak var lunchButton: UIButton!
     
@@ -63,6 +62,17 @@ class SelectionViewController: UIViewController {
             destinationVC.text2 = lunchArrayTwo[2]
             destinationVC.text3 = lunchArrayThree[2]
 
+            destinationVC.when1 = lunchArrayOne[3]
+            destinationVC.when2 = lunchArrayTwo[3]
+            destinationVC.when3 = lunchArrayThree[3]
+            
+            destinationVC.details1 = lunchArrayOne[4]
+            destinationVC.details2 = lunchArrayTwo[4]
+            destinationVC.details3 = lunchArrayThree[4]
+            
+            destinationVC.address1 = lunchArrayOne[5]
+            destinationVC.address2 = lunchArrayTwo[5]
+            destinationVC.address3 = lunchArrayThree[5]
             
         }
         if segue.identifier == "dinnerSegue" {
