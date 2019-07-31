@@ -88,15 +88,15 @@ class TableViewController: UITableViewController {
         cell.avatarImageView.image = UIImage(named: pictureArray[indexPath.row])
         cell.promotionDescription.text = restaurantNameArray[indexPath.row]
         
-        if let color = UIColor.flatWhite()?.darken(byPercentage: (CGFloat(indexPath.row)/CGFloat(restaurantNameArray.count))/2) {
+//        if let color = UIColor.flatWhite()?.darken(byPercentage: (CGFloat(indexPath.row)/CGFloat(restaurantNameArray.count))/2) {
             
-            cell.backgroundColor = color
-            cell.messageBody.textColor = UIColor.init(contrastingBlackOrWhiteColorOn: color, isFlat: true)
-            cell.promotionDescription.textColor = UIColor.init(contrastingBlackOrWhiteColorOn: color, isFlat: true)
-        }
+//            cell.backgroundColor = color
+//            cell.messageBody.textColor = UIColor.init(contrastingBlackOrWhiteColorOn: color, isFlat: true)
+//            cell.promotionDescription.textColor = UIColor.init(contrastingBlackOrWhiteColorOn: color, isFlat: true)
+//        }
         
         return cell
-        
+     
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
