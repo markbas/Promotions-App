@@ -16,8 +16,8 @@ class DetailsViewController: UIViewController {
     var dataFieldThree = ""
     
     @IBOutlet weak var textFieldOne: UITextField!
-    @IBOutlet weak var imageViewOne: UIImageView!
-    @IBOutlet weak var textFieldTwo: UITextField!
+    @IBOutlet weak var imageViewOne: UIImageView!    
+    @IBOutlet weak var textFieldTwo: UILabel!
     @IBOutlet weak var textFieldThree: UITextField!
     
     

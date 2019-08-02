@@ -39,16 +39,14 @@
                                     <constraint firstAttribute="width" constant="110" id="cfG-zK-5xi"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" fixedFrame="YES" text="Description" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ael-H3-UuV">
-                                <rect key="frame" x="126" y="44" width="194" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Description" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ael-H3-UuV">
+                                <rect key="frame" x="126" y="45.5" width="110" height="57.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khv-tc-S9N">
-                                <rect key="frame" x="126" y="8" width="194" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khv-tc-S9N">
+                                <rect key="frame" x="126" y="8" width="61.5" height="32.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -57,8 +55,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="240" id="0fE-Bj-ts0"/>
+                            <constraint firstItem="khv-tc-S9N" firstAttribute="top" secondItem="tnJ-68-wL9" secondAttribute="top" constant="8" id="CKM-Oo-teC"/>
+                            <constraint firstItem="khv-tc-S9N" firstAttribute="leading" secondItem="KKK-He-xNm" secondAttribute="trailing" constant="8" id="Dm0-EF-9m0"/>
                             <constraint firstAttribute="height" constant="128" id="GLi-7D-9q0"/>
+                            <constraint firstAttribute="trailing" secondItem="Ael-H3-UuV" secondAttribute="trailing" constant="4" id="J7x-NG-tRI"/>
+                            <constraint firstItem="Ael-H3-UuV" firstAttribute="leading" secondItem="KKK-He-xNm" secondAttribute="trailing" constant="8" id="Yrk-Dt-wRQ"/>
                             <constraint firstItem="KKK-He-xNm" firstAttribute="top" secondItem="tnJ-68-wL9" secondAttribute="top" constant="8" id="c4U-Ci-lNH"/>
+                            <constraint firstItem="Ael-H3-UuV" firstAttribute="top" secondItem="khv-tc-S9N" secondAttribute="bottom" constant="5" id="k4F-m6-yHd"/>
                             <constraint firstItem="KKK-He-xNm" firstAttribute="leading" secondItem="tnJ-68-wL9" secondAttribute="leading" constant="8" id="wxZ-Ox-XdM"/>
                         </constraints>
                     </view>

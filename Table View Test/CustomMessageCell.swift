@@ -21,7 +21,9 @@ class CustomMessageCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code goes here
-        
+    
+    messageBody.numberOfLines = 0
+    
     backgroundCardView.layer.cornerRadius = 3.0
     
     backgroundCardView.layer.masksToBounds = false
