@@ -10,8 +10,6 @@ import UIKit
 
 class SelectionViewController: UIViewController {
 
-   // var lunchArray = ["dice1", "dice5", "Hello World  Hello World Hello World Hello World Hello World", "Go Gators", "Hello World", "Go Gators", "Hello World", "Go Gators", "Hello World", "Go Gators", "Hello World", "Go Gators", "Hello World", "Go Gators", "Hello World", "Go Gators", "Hello World", "Go Gators", "Hello World Hello World"]
-    
     let lunchArrayOne = ["Viet Nom Nom", "dice1", "10% Off Bahn Mi", "11am-3pm", "10% off any Bahn Mi on the menu", "1234 Sherman Dr"]
     let lunchArrayTwo = ["Bat 17", "dice5", "Half Price Sandwiches and Appetizers", "10:30am-2:30pm", "50% off any sandwich under $15", "5678 Chicago St"]
     let lunchArrayThree = ["Taco Diablo", "dice1", "20% Off Tacos", "11am-2:30pm", "20% off any order of a 3 taco combo", "901 Davis St"]
@@ -33,6 +31,11 @@ class SelectionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        dinnerButton.frame = CGRect(x: (self.view.frame.width)/2-(200/2), y: (self.view.frame.height-78+124)/2, width: 200, height: 78)
+        lunchButton.frame = CGRect(x: (self.view.frame.width)/2-(200/2), y: (self.view.frame.height-78+124)/2-125, width: 200, height: 78)
+        drinksButton.frame = CGRect(x: (self.view.frame.width)/2-(200/2), y: (self.view.frame.height-78+124)/2+125, width: 200, height: 78)
+
         
         lunchButton.layer.cornerRadius = 10
         lunchButton.layer.masksToBounds = false
