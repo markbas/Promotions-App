@@ -14,13 +14,16 @@ class SelectionViewController: UIViewController {
     let lunchArrayTwo = ["Bat 17", "dice5", "Half Price Sandwiches and Appetizers", "10:30am-2:30pm", "50% off any sandwich under $15", "5678 Chicago St"]
     let lunchArrayThree = ["Taco Diablo", "dice1", "20% Off Tacos", "11am-2:30pm", "20% off any order of a 3 taco combo", "901 Davis St"]
     
-    let dinnerArrayOne = ["Giordanos", "dice5", "25% Off deep dish", "5pm-11pm", "25% off any Chicago Style pizza", "1357 Chicago St"]
+    let dinnerArrayOne = ["Giordanos", "dice5", "25% Off deep dish and 10% off slices and 15% off salads", "5pm-11pm", "25% off any Chicago Style pizza", "1357 Chicago St"]
     let dinnerArrayTwo = ["Cozy Noodles", "dice1", "$10 Noodle Dishes", "5:30pm-10:30pm", "All noodle dishes on the menu only $10", "2468 Davis St"]
     let dinnerArrayThree = ["Little Mexican Cafe", "dice5", "Half Price Tacos", "6pm-10pm", "All tacos 50% off", "2222 Foster St"]
     
     let drinksArrayOne = ["Lou Malnatis", "dice5", "25% Off deep dish", "5pm-11pm", "25% off any Chicago Style pizza", "1357 Chicago St"]
     let drinksArrayTwo = ["Mt Everest", "dice1", "$10 Noodle Dishes", "5:30pm-10:30pm", "All noodle dishes on the menu only $10", "2468 Davis St"]
     let drinksArrayThree = ["Taco Loco", "dice5", "Half Price Tacos", "6pm-10pm", "All tacos 50% off", "2222 Foster St"]
+
+    
+    @IBOutlet weak var logoLabel: UILabel!
     
     @IBOutlet weak var lunchButton: UIButton!
     
@@ -31,6 +34,8 @@ class SelectionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        logoLabel.frame = CGRect(x: (self.view.frame.width)/2-(300/2), y: (self.view.frame.height)/8, width: 300, height: 78)
         
         dinnerButton.frame = CGRect(x: (self.view.frame.width)/2-(200/2), y: (self.view.frame.height-78+124)/2, width: 200, height: 78)
         lunchButton.frame = CGRect(x: (self.view.frame.width)/2-(200/2), y: (self.view.frame.height-78+124)/2-125, width: 200, height: 78)
@@ -123,6 +128,18 @@ class SelectionViewController: UIViewController {
             destinationVC.text1 = dinnerArrayOne[2]
             destinationVC.text2 = dinnerArrayTwo[2]
             destinationVC.text3 = dinnerArrayThree[2]
+            
+            destinationVC.when1 = dinnerArrayOne[3]
+            destinationVC.when2 = dinnerArrayTwo[3]
+            destinationVC.when3 = dinnerArrayThree[3]
+            
+            destinationVC.details1 = dinnerArrayOne[4]
+            destinationVC.details2 = dinnerArrayTwo[4]
+            destinationVC.details3 = dinnerArrayThree[4]
+            
+            destinationVC.address1 = dinnerArrayOne[5]
+            destinationVC.address2 = dinnerArrayTwo[5]
+            destinationVC.address3 = dinnerArrayThree[5]
             
         }
         if segue.identifier == "drinksSegue" {

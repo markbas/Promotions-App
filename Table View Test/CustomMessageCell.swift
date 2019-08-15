@@ -23,7 +23,8 @@ class CustomMessageCell: UITableViewCell {
         // Initialization code goes here
     
     messageBody.numberOfLines = 0
-    
+    promotionDescription.numberOfLines = 0
+        
     backgroundCardView.layer.cornerRadius = 3.0
     
     backgroundCardView.layer.masksToBounds = false

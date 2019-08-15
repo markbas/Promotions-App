@@ -15,7 +15,7 @@ class TableViewController: UITableViewController {
 // MODEL VIEW DATA:
     
     // 0 = Sunday; 1 = Monday, 2 = Tuesday; etc.
-    let dayOfWeek = 1
+    // let dayOfWeek = 1
     
     // Restaurant arrays contain promotion information and are organized based on day of the week (0 = Monday, 1 = Tuesday, etc.).  "nil" means there is no deal that day.
     var restaurantName1 = ""

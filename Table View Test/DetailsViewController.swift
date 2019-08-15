@@ -36,17 +36,17 @@ class DetailsViewController: UIViewController {
         
         imageViewOne.frame = CGRect(x: (self.view.frame.width)/5, y: (self.view.frame.height)/8, width: CGFloat(self.view.frame.width*0.6), height: CGFloat(self.view.frame.width*0.6))
         
-        whenField.frame = CGRect(x: 0, y: (self.view.frame.height)/2, width: CGFloat(self.view.frame.width), height: 40)
+        whenField.frame = CGRect(x: 0, y: (self.view.frame.height)/2-5, width: CGFloat(self.view.frame.width), height: 30)
         
-        textFieldOne.frame = CGRect(x: 0, y: (self.view.frame.height)/2+50, width: CGFloat(self.view.frame.width), height: 40)
+        textFieldOne.frame = CGRect(x: 0, y: (self.view.frame.height)/2+25, width: CGFloat(self.view.frame.width), height: 30)
         
-        detailsField.frame = CGRect(x: 0, y: (self.view.frame.height)/2+100, width: CGFloat(self.view.frame.width), height: 40)
+        detailsField.frame = CGRect(x: 0, y: (self.view.frame.height)/2+75, width: CGFloat(self.view.frame.width), height: 30)
         
-        textFieldTwo.frame = CGRect(x: (self.view.frame.width)/10, y: (self.view.frame.height)/2+140, width: CGFloat(self.view.frame.width)*0.8, height: 80)
+        textFieldTwo.frame = CGRect(x: (self.view.frame.width)/10, y: (self.view.frame.height)/2+115, width: CGFloat(self.view.frame.width)*0.8, height: 60)
         
-        whereField.frame = CGRect(x: 0, y: (self.view.frame.height)/2+230, width: CGFloat(self.view.frame.width), height: 40)
+        whereField.frame = CGRect(x: 0, y: (self.view.frame.height)/2+205, width: CGFloat(self.view.frame.width), height: 30)
         
-        textFieldThree.frame = CGRect(x: 0, y: (self.view.frame.height)/2+280, width: CGFloat(self.view.frame.width), height: 40)
+        textFieldThree.frame = CGRect(x: 0, y: (self.view.frame.height)/2+235, width: CGFloat(self.view.frame.width), height: 30)
         
     }
     
