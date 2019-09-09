@@ -24,7 +24,8 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var detailsField: UITextField!
     @IBOutlet weak var whereField: UITextField!
     
-    
+    //let relativeHeaderFontConstant:CGFloat = 0.050
+    //let relativeDetailsFontConstant:CGFloat = 0.045
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,13 @@ class DetailsViewController: UIViewController {
         imageViewOne.image = UIImage(named:pictureOne)
         textFieldTwo.text = dataFieldTwo
         textFieldThree.text = dataFieldThree
+        
+        
+        //for text in whenField {
+            
+        //    text.font = text.font?.withSize(self.view.frame.height * relativeHeaderFontConstant)
+            
+        //}
         
         imageViewOne.frame = CGRect(x: (self.view.frame.width)/5, y: (self.view.frame.height)/8, width: CGFloat(self.view.frame.width*0.6), height: CGFloat(self.view.frame.width*0.6))
         

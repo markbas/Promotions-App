@@ -125,22 +125,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phn-67-fKE">
-                                <rect key="frame" x="130.5" y="311" width="153" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="50"/>
-                                <state key="normal" title="Lunch"/>
-                                <connections>
-                                    <action selector="lunchButtonPressed:" destination="1HX-5j-kE6" eventType="touchUpInside" id="JWJ-QT-6BL"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evy-gB-M9C">
-                                <rect key="frame" x="117.03178484107593" y="409.83618581907081" width="177" height="77.000000000000014"/>
+                                <rect key="frame" x="164.03178484107593" y="410.83618581907081" width="83" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="50"/>
-                                <state key="normal" title="Dinner">
+                                <state key="normal" title="Eat">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -155,13 +145,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOM-96-iX9">
-                                <rect key="frame" x="121" y="521" width="173" height="77"/>
+                                <rect key="frame" x="135" y="521" width="146" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="50"/>
-                                <state key="normal" title="Drinks"/>
+                                <state key="normal" title="Drink"/>
                                 <connections>
                                     <action selector="drinksButtonPressed:" destination="1HX-5j-kE6" eventType="touchUpInside" id="YT0-Bb-59L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="111-dz-VsB">
+                                <rect key="frame" x="105" y="767" width="211" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                <state key="normal" title="Contact Us!">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WqI-xI-LBU" kind="show" id="nQ2-q0-AoZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -170,10 +171,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="SyH-Yd-3CW"/>
                     <connections>
+                        <outlet property="contactButton" destination="111-dz-VsB" id="cce-6e-Bce"/>
                         <outlet property="dinnerButton" destination="evy-gB-M9C" id="2eP-Fe-9BU"/>
                         <outlet property="drinksButton" destination="rOM-96-iX9" id="G9M-Zb-LKI"/>
                         <outlet property="logoLabel" destination="MYC-Hu-eCO" id="mQz-Kt-4Rb"/>
-                        <outlet property="lunchButton" destination="Phn-67-fKE" id="Ymi-t2-WYJ"/>
                         <segue destination="0SN-vt-Wck" kind="show" identifier="goToTableView" id="2wv-et-z8H"/>
                         <segue destination="0SN-vt-Wck" kind="show" identifier="dinnerSegue" id="vqa-uB-fOw"/>
                         <segue destination="0SN-vt-Wck" kind="show" identifier="drinksSegue" id="eCy-3e-wfY"/>
@@ -182,6 +183,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2E4-SO-aK7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="702.89855072463774" y="-29.464285714285712"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="fCD-wl-UPE">
+            <objects>
+                <viewController id="WqI-xI-LBU" customClass="ContactViewController" customModule="Table_View_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gap-aQ-QyM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shoestring" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="Vux-8o-0Mb">
+                                <rect key="frame" x="61" y="135" width="293" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Questions? Comments? Concerns?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrT-Nr-Jkz">
+                                <rect key="frame" x="85" y="238" width="245" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email Us!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3HH-LK-rX1">
+                                <rect key="frame" x="85" y="423" width="245" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mark.basford@kellogg.northwestern.edu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Jb-TT-sj5">
+                                <rect key="frame" x="61" y="518" width="293" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="aHj-hT-hF8"/>
+                    </view>
+                    <connections>
+                        <outlet property="contactLabelOne" destination="zrT-Nr-Jkz" id="GvA-Rz-RLx"/>
+                        <outlet property="contactLabelThree" destination="0Jb-TT-sj5" id="SV2-Fp-qs7"/>
+                        <outlet property="contactLabelTwo" destination="3HH-LK-rX1" id="h4F-ya-TgH"/>
+                        <outlet property="contactLogoLabel" destination="Vux-8o-0Mb" id="H86-JB-LgU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wsc-6L-o4X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702.89855072463774" y="746.65178571428567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mp2-JQ-AT6">

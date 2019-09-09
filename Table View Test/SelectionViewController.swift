@@ -10,26 +10,28 @@ import UIKit
 
 class SelectionViewController: UIViewController {
 
-    let lunchArrayOne = ["Viet Nom Nom", "dice1", "10% Off Bahn Mi", "11am-3pm", "10% off any Bahn Mi on the menu", "1234 Sherman Dr"]
-    let lunchArrayTwo = ["Bat 17", "dice5", "Half Price Sandwiches and Appetizers", "10:30am-2:30pm", "50% off any sandwich under $15", "5678 Chicago St"]
-    let lunchArrayThree = ["Taco Diablo", "dice1", "20% Off Tacos", "11am-2:30pm", "20% off any order of a 3 taco combo", "901 Davis St"]
+// MONDAY PROMOTIONS
     
-    let dinnerArrayOne = ["Giordanos", "dice5", "25% Off deep dish and 10% off slices and 15% off salads", "5pm-11pm", "25% off any Chicago Style pizza", "1357 Chicago St"]
-    let dinnerArrayTwo = ["Cozy Noodles", "dice1", "$10 Noodle Dishes", "5:30pm-10:30pm", "All noodle dishes on the menu only $10", "2468 Davis St"]
-    let dinnerArrayThree = ["Little Mexican Cafe", "dice5", "Half Price Tacos", "6pm-10pm", "All tacos 50% off", "2222 Foster St"]
+    let lunchArrayOne = ["Asian Restaurant", "dice1", "10% Off Bahn Mi", "11am-3pm", "10% off any Bahn Mi on the menu", "1234 Sherman Dr"]
+    let lunchArrayTwo = ["Sandwich Shop", "dice5", "Half Price Sandwiches and Appetizers", "10:30am-2:30pm", "50% off any sandwich under $15", "5678 Chicago St"]
+    let lunchArrayThree = ["Mexican Restaurant", "dice1", "20% Off Tacos", "11am-2:30pm", "20% off any order of a 3 taco combo", "901 Davis St"]
     
-    let drinksArrayOne = ["Lou Malnatis", "dice5", "25% Off deep dish", "5pm-11pm", "25% off any Chicago Style pizza", "1357 Chicago St"]
-    let drinksArrayTwo = ["Mt Everest", "dice1", "$10 Noodle Dishes", "5:30pm-10:30pm", "All noodle dishes on the menu only $10", "2468 Davis St"]
-    let drinksArrayThree = ["Taco Loco", "dice5", "Half Price Tacos", "6pm-10pm", "All tacos 50% off", "2222 Foster St"]
+    let dinnerArrayOne = ["Pizza Shop", "dice5", "25% Off deep dish and 10% off slices and 15% off salads", "5pm-11pm", "25% off any Chicago Style pizza", "1357 Chicago St"]
+    let dinnerArrayTwo = ["Thai Restaurant", "dice1", "$10 Noodle Dishes", "5:30pm-10:30pm", "All noodle dishes on the menu only $10", "2468 Davis St"]
+    let dinnerArrayThree = ["Mexican Restaurant", "dice5", "Half Price Tacos", "6pm-10pm", "All tacos 50% off", "2222 Foster St"]
+    
+    let drinksArrayOne = ["Pizza Joint", "dice5", "25% Off deep dish", "5pm-11pm", "25% off any Chicago Style pizza", "1357 Chicago St"]
+    let drinksArrayTwo = ["Asian Restaurant", "dice1", "$10 Noodle Dishes", "5:30pm-10:30pm", "All noodle dishes on the menu only $10", "2468 Davis St"]
+    let drinksArrayThree = ["Mexican Restaurant", "dice5", "Half Price Tacos", "6pm-10pm", "All tacos 50% off", "2222 Foster St"]
 
     
     @IBOutlet weak var logoLabel: UILabel!
     
-    @IBOutlet weak var lunchButton: UIButton!
-    
     @IBOutlet weak var dinnerButton: UIButton!
     
     @IBOutlet weak var drinksButton: UIButton!
+    
+    @IBOutlet weak var contactButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -37,17 +39,10 @@ class SelectionViewController: UIViewController {
         
         logoLabel.frame = CGRect(x: (self.view.frame.width)/2-(300/2), y: (self.view.frame.height)/8, width: 300, height: 78)
         
-        dinnerButton.frame = CGRect(x: (self.view.frame.width)/2-(200/2), y: (self.view.frame.height-78+124)/2, width: 200, height: 78)
-        lunchButton.frame = CGRect(x: (self.view.frame.width)/2-(200/2), y: (self.view.frame.height-78+124)/2-125, width: 200, height: 78)
-        drinksButton.frame = CGRect(x: (self.view.frame.width)/2-(200/2), y: (self.view.frame.height-78+124)/2+125, width: 200, height: 78)
-
+        dinnerButton.frame = CGRect(x: (self.view.frame.width)/2-(200/2), y: (self.view.frame.height)/2-50, width: 200, height: 78)
+        drinksButton.frame = CGRect(x: (self.view.frame.width)/2-(200/2), y: (self.view.frame.height-78+124)/2+50, width: 200, height: 78)
+        contactButton.frame = CGRect(x: (self.view.frame.width)/2-(225/2), y: (self.view.frame.height)-100, width: 225, height: 78)
         
-        lunchButton.layer.cornerRadius = 10
-        lunchButton.layer.masksToBounds = false
-        lunchButton.layer.shadowColor = UIColor.black.withAlphaComponent(0.25).cgColor
-        lunchButton.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-        lunchButton.layer.shadowOpacity = 0.8
-        lunchButton.backgroundColor = UIColor.white
         
         dinnerButton.layer.cornerRadius = 10
         dinnerButton.layer.masksToBounds = false
@@ -63,13 +58,9 @@ class SelectionViewController: UIViewController {
         drinksButton.layer.shadowOpacity = 0.8
         drinksButton.backgroundColor = UIColor.white
         
+        
     }
     
-    @IBAction func lunchButtonPressed(_ sender: Any) {
-        
-        performSegue(withIdentifier: "goToTableView", sender: self)
-        
-    }
     
     @IBAction func dinnerButtonPressed(_ sender: Any) {
         
@@ -84,35 +75,7 @@ class SelectionViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToTableView" {
-            
-            let destinationVC = segue.destination as! TableViewController
-            
-            destinationVC.restaurantName1 = lunchArrayOne[0]
-            destinationVC.restaurantName2 = lunchArrayTwo[0]
-            destinationVC.restaurantName3 = lunchArrayThree[0]
-            
-            destinationVC.picture1 = lunchArrayOne[1]
-            destinationVC.picture2 = lunchArrayTwo[1]
-            destinationVC.picture3 = lunchArrayThree[1]
-         
-            destinationVC.text1 = lunchArrayOne[2]
-            destinationVC.text2 = lunchArrayTwo[2]
-            destinationVC.text3 = lunchArrayThree[2]
 
-            destinationVC.when1 = lunchArrayOne[3]
-            destinationVC.when2 = lunchArrayTwo[3]
-            destinationVC.when3 = lunchArrayThree[3]
-            
-            destinationVC.details1 = lunchArrayOne[4]
-            destinationVC.details2 = lunchArrayTwo[4]
-            destinationVC.details3 = lunchArrayThree[4]
-            
-            destinationVC.address1 = lunchArrayOne[5]
-            destinationVC.address2 = lunchArrayTwo[5]
-            destinationVC.address3 = lunchArrayThree[5]
-            
-        }
         if segue.identifier == "dinnerSegue" {
             
             let destinationVC = segue.destination as! TableViewController
@@ -172,15 +135,4 @@ class SelectionViewController: UIViewController {
         }
     }
     
-    
-   // override func prepare(for segue: UIStoryboardSegue, sender: (Any)?) {
-     // if segue.identifier == "goToTableView" {
-            
-     // let secondVC = segue.destination as! TableViewController
-            
-          //  secondVC.dataFieldOne = textArray[0]
-        //    secondVC.pictureOne = pictureArray[0]
-            
         }
-//{
-//{
