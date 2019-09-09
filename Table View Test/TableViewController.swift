@@ -14,59 +14,75 @@ class TableViewController: UITableViewController {
 
 // MODEL VIEW DATA:
     
-    // 0 = Sunday; 1 = Monday, 2 = Tuesday; etc.
-    // let dayOfWeek = 1
-    
-    // Restaurant arrays contain promotion information and are organized based on day of the week (0 = Monday, 1 = Tuesday, etc.).  "nil" means there is no deal that day.
     var restaurantName1 = ""
     var restaurantName2 = ""
     var restaurantName3 = ""
+    var restaurantName4 = ""
+    var restaurantName5 = ""
+    var restaurantName6 = ""
     
-    //var restaurant1 = ["",""]
-    //var restaurant2 = ""
-    //var restaurant3 = ""
     
     var picture1 = ""
     var picture2 = ""
     var picture3 = ""
+    var picture4 = ""
+    var picture5 = ""
+    var picture6 = ""
+
 
     var text1 = ""
     var text2 = ""
     var text3 = ""
+    var text4 = ""
+    var text5 = ""
+    var text6 = ""
+
     
     var when1 = ""
     var when2 = ""
     var when3 = ""
+    var when4 = ""
+    var when5 = ""
+    var when6 = ""
+
     
     var details1 = ""
     var details2 = ""
     var details3 = ""
+    var details4 = ""
+    var details5 = ""
+    var details6 = ""
+
     
     var address1 = ""
     var address2 = ""
     var address3 = ""
+    var address4 = ""
+    var address5 = ""
+    var address6 = ""
+
     
     
 // TABLE VIEW DATA:
     
     // Following three arrays have data that is applied to the table view and transferred to the DetailsViewController.  Will need to manually update based on restaurants that have promotions to be included that day.
     lazy var restaurantNameArray: [String] = { [unowned self] in
-        return [self.restaurantName1, self.restaurantName2, self.restaurantName3]
+        return [self.restaurantName1, self.restaurantName2, self.restaurantName3, self.restaurantName4, self.restaurantName5, self.restaurantName6]
         }()
     
 //    lazy var itemArray: [String] = { [unowned self] in
 //        return [self.restaurant1[self.dayOfWeek], self.restaurant2, self.restaurant3]
 //    }()
     
-    lazy var pictureArray: [String] = {[unowned self] in return [self.picture1, self.picture2, self.picture3] }()
+    lazy var pictureArray: [String] = {[unowned self] in return [self.picture1, self.picture2, self.picture3, self.picture4, self.picture5, self.picture6] }()
     
-    lazy var textArray: [String] = {[unowned self] in return [self.text1, self.text2, self.text3] }()
+    lazy var textArray: [String] = {[unowned self] in return [self.text1, self.text2, self.text3, self.text4, self.text5, self.text6] }()
     
-    lazy var whenArray: [String] = {[unowned self] in return [self.when1, self.when2, self.when3] }()
+    lazy var whenArray: [String] = {[unowned self] in return [self.when1, self.when2, self.when3, self.when4, self.when5, self.when6] }()
 
-    lazy var detailsArray: [String] = {[unowned self] in return [self.details1, self.details2, self.details3] }()
+    lazy var detailsArray: [String] = {[unowned self] in return [self.details1, self.details2, self.details3, self.details4, self.details5, self.details6] }()
     
-    lazy var addressArray: [String] = {[unowned self] in return [self.address1, self.address2, self.address3] }()
+    lazy var addressArray: [String] = {[unowned self] in return [self.address1, self.address2, self.address3, self.address4, self.address5, self.address6] }()
     
     
     override func viewDidLoad() {
