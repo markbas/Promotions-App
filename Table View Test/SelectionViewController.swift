@@ -15,8 +15,9 @@ class SelectionViewController: UIViewController {
     let dinnerArrayOne = ["Prairie Moon", "dice5", "Happy hour food specials", "4pm-6pm", "$6 Little Plates", "1635 Chicago Ave"]
     let dinnerArrayTwo = ["Koi", "dice1", "Happy hour food specials", "4:30-close", "Half off certain starters and maki rolls", "624 Davis St"]
     let dinnerArrayThree = ["Bar Louie", "dice5", "Appy Hour: Appetizer specials", "4pm-close", "Half off flatbreads and select apps", "1520 Sherman Ave"]
-    let dinnerArrayFour = ["Kokomo", "dice5", "$12.99 All you can eat lunch buffet", "11:30am-3:00pm", "$12.99 All you can eat Korean lunch buffet", "1639 Orrington Ave"]
-     let dinnerArrayFive = ["Celtic Knot", "dice5", "Appetizer, entree, and dessert specials", "4pm-9pm", "Appetizer, entree, and dessert specials - see website for details", "626 Church St"]
+    let dinnerArrayFour = ["Terra & Vine", "dice1", "Happy hour food specials", "4:30pm-6:30pm", "$6 Pizzettes - bar area only", "1701 Maple Ave"]
+    let dinnerArrayFive = ["Kokomo", "dice5", "$12.99 All you can eat lunch buffet", "11:30am-3:00pm", "$12.99 All you can eat Korean lunch buffet", "1639 Orrington Ave"]
+    let dinnerArraySix = ["Celtic Knot", "dice5", "Appetizer, entree, and dessert specials", "4pm-9pm", "Appetizer, entree, and dessert specials - see website for details", "626 Church St"]
 
     
     let drinksArrayOne = ["Prairie Moon", "dice5", "Happy hour drink specials", "4pm-6pm", "$6 wine glasses, $4 pints, $4 Fat Tire Cans, and $5 cocktails", "1635 Chicago Ave"]
@@ -25,6 +26,25 @@ class SelectionViewController: UIViewController {
     let drinksArrayFour = ["Terra & Vine", "dice5", "Happy hour drink specials", "4:30pm-6:30pm", "$3 beer, $5 glasses of wine, $7 whiskey cocktails", "1010 Church St"]
     let drinksArrayFive = ["Celtic Knot", "dice5", "All day drink specials", "All Day", "$4 Smithwicks pints, $3 Red Stripe, $6 whiskey cocktails", "626 Church St"]
 
+    //TUESDAY PROMOTIONS
+    
+   // let dinnerArrayOne = ["Prairie Moon", "dice5", "Happy hour food specials", "4pm-6pm", "$6 Little Plates", "1635 Chicago Ave"]
+   // let dinnerArrayTwo = ["Koi", "dice1", "Happy hour food specials", "4:30-close", "Half off certain starters and maki rolls", "624 Davis St"]
+    // let dinnerArrayThree = ["Found Kitchen", "dice5", "Happy Hour", "4pm-6pm", "See website for details", "1631 Chicago Ave"]
+    // let dinnerArrayFour = ["Bar Louie", "dice5", "Half off burgers", "5pm-close", "50% off craft burgers", "1520 Sherman Ave"]
+    // let dinnerArrayFive = ["Terra & Vine", "dice1", "$6 Pizzettes", "4:30pm-6:30pm", "1701 Maple Ave"]
+    // let dinnerArraySix = ["Kokomo", "dice5", "$12.99 All you can eat lunch buffet", "11:30am-3:00pm", "$12.99 All you can eat Korean lunch buffet", "1639 Orrington Ave"]
+    // let dinnerArraySeven = ["Celtic Knot", "dice5", "Appetizer, entree, and dessert specials", "4pm-9pm", "Appetizer, entree, and dessert specials - see website for details", "626 Church St"]
+    
+    
+    // let drinksArrayOne = ["Whiskey Thief", "dice1", "Drink Specials and Trivia Night", "Starting at 8pm", "$3.50 Old Style, $15 buckets, $4 rotating pints", "616 Davis St"]
+    // let drinksArrayTwo = ["Prairie Moon", "dice5", "Happy hour drink specials", "4pm-6pm", "$6 wine glasses, $4 pints, $4 Fat Tire Cans, and $5 cocktails", "1635 Chicago Ave"]
+    // let drinksArrayThree = ["Koi", "dice1", "Happy hour drink specials", "4:30pm-6:30pm", "Half price specialty cocktails", "624 Davis St"]
+    // let drinksArrayFour = ["Little Mexican Cafe", "dice5", "Happy hour drink specials", "4pm-7pm", "$5 margaritas and glasses of wine (House Chardonnay or Cabernet only)", "1010 Church St"]
+    // let drinksArrayFive = ["Terra & Vine", "dice5", "Happy hour drink specials", "4:30pm-6:30pm", "$3 beer, $5 glasses of wine, $7 whiskey cocktails", "1010 Church St"]
+    // let drinksArraySix = ["Celtic Knot", "dice5", "All day drink specials", "All Day", "$4 Kilkenny pints, $3 Red Stripe, $6 whiskey cocktails", "626 Church St"]
+
+    
     
     @IBOutlet weak var logoLabel: UILabel!
     

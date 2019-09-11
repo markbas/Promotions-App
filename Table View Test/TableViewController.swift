@@ -67,22 +67,22 @@ class TableViewController: UITableViewController {
     
     // Following three arrays have data that is applied to the table view and transferred to the DetailsViewController.  Will need to manually update based on restaurants that have promotions to be included that day.
     lazy var restaurantNameArray: [String] = { [unowned self] in
-        return [self.restaurantName1, self.restaurantName2, self.restaurantName3, self.restaurantName4, self.restaurantName5, self.restaurantName6]
+        return [self.restaurantName1, self.restaurantName2, self.restaurantName3, self.restaurantName4, self.restaurantName5]
         }()
     
 //    lazy var itemArray: [String] = { [unowned self] in
 //        return [self.restaurant1[self.dayOfWeek], self.restaurant2, self.restaurant3]
 //    }()
     
-    lazy var pictureArray: [String] = {[unowned self] in return [self.picture1, self.picture2, self.picture3, self.picture4, self.picture5, self.picture6] }()
+    lazy var pictureArray: [String] = {[unowned self] in return [self.picture1, self.picture2, self.picture3, self.picture4, self.picture5] }()
     
-    lazy var textArray: [String] = {[unowned self] in return [self.text1, self.text2, self.text3, self.text4, self.text5, self.text6] }()
+    lazy var textArray: [String] = {[unowned self] in return [self.text1, self.text2, self.text3, self.text4, self.text5] }()
     
-    lazy var whenArray: [String] = {[unowned self] in return [self.when1, self.when2, self.when3, self.when4, self.when5, self.when6] }()
+    lazy var whenArray: [String] = {[unowned self] in return [self.when1, self.when2, self.when3, self.when4, self.when5] }()
 
-    lazy var detailsArray: [String] = {[unowned self] in return [self.details1, self.details2, self.details3, self.details4, self.details5, self.details6] }()
+    lazy var detailsArray: [String] = {[unowned self] in return [self.details1, self.details2, self.details3, self.details4, self.details5] }()
     
-    lazy var addressArray: [String] = {[unowned self] in return [self.address1, self.address2, self.address3, self.address4, self.address5, self.address6] }()
+    lazy var addressArray: [String] = {[unowned self] in return [self.address1, self.address2, self.address3, self.address4, self.address5] }()
     
     
     override func viewDidLoad() {
