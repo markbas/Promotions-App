@@ -11,7 +11,7 @@
         <!--Shoestring-->
         <scene sceneID="r9N-pF-e8U">
             <objects>
-                <tableViewController id="0SN-vt-Wck" customClass="TableViewController" customModule="Table_View_Test" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="0SN-vt-Wck" customClass="TableViewController" customModule="Shoestring_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="K8P-iI-27p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,7 +44,7 @@
         <!--Details View Controller-->
         <scene sceneID="7K8-aL-4kZ">
             <objects>
-                <viewController id="WKs-F5-vC9" customClass="DetailsViewController" customModule="Table_View_Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WKs-F5-vC9" customClass="DetailsViewController" customModule="Shoestring_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XOg-OK-I1Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -118,7 +118,7 @@
         <!--Selection View Controller-->
         <scene sceneID="gP8-1g-Mmq">
             <objects>
-                <viewController id="1HX-5j-kE6" customClass="SelectionViewController" customModule="Table_View_Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1HX-5j-kE6" customClass="SelectionViewController" customModule="Shoestring_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CdU-2A-2Pf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -193,7 +193,7 @@
         <!--Contact View Controller-->
         <scene sceneID="fCD-wl-UPE">
             <objects>
-                <viewController id="WqI-xI-LBU" customClass="ContactViewController" customModule="Table_View_Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WqI-xI-LBU" customClass="ContactViewController" customModule="Shoestring_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gap-aQ-QyM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,9 +219,11 @@
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mark.basford@kellogg.northwestern.edu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Jb-TT-sj5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Jb-TT-sj5">
                                 <rect key="frame" x="61" y="518" width="293" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">shoestring.mark@
+gmail.com</string>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>

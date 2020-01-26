@@ -12,64 +12,64 @@ class SelectionViewController: UIViewController {
 
 // MONDAY PROMOTIONS
     
-    let dinnerCount = 7
+//    let dinnerCount = 7
     
-    let dinnerArrayOne = ["Prairie Moon", "PrairieMoon", "Happy hour food specials", "4pm-6pm", "$6 Little Plates and Raw Bar deals", "1635 Chicago Ave"]
-    let dinnerArrayTwo = ["Koi", "Koi", "Happy hour food specials", "4:30-close", "Half off certain starters and maki rolls", "624 Davis St"]
-    let dinnerArrayThree = ["Bar Louie", "BarLouie", "Appy Hour: Appetizer specials", "4pm-7pm", "Half off flatbreads and select apps", "1520 Sherman Ave"]
-    let dinnerArrayFour = ["Terra & Vine", "Terra&Vine", "Happy hour food specials", "4:30pm-6:30pm", "$6 Pizzettes - bar area only", "1701 Maple Ave"]
-    let dinnerArrayFive = ["Bangers & Lace","Bangers&Lace","Happy hour burger combo","4pm-6pm","$15 burger, shot, beer combo","810 Grove St"]
-    let dinnerArraySix = ["Celtic Knot", "CelticKnot", "Appetizer, entree, and dessert specials", "4pm-9pm", "Appetizer, entree, and dessert specials - see website for details", "626 Church St"]
-    let dinnerArraySeven = ["Stacked & Folded","Stacked&Folded","Happy hour bar bites","4pm-6:30pm","$7 bar bite options (change daily)","824 Noyes St"]
-    let dinnerArrayEight = ["","","","","",""]
-    let dinnerArrayNine = ["","","","","",""]
-    let dinnerArrayTen = ["","","","","",""]
+//    let dinnerArrayOne = ["Prairie Moon", "PrairieMoon", "Happy hour food specials", "4pm-6pm", "$6 Little Plates and Raw Bar deals", "1635 Chicago Ave"]
+//    let dinnerArrayTwo = ["Koi", "Koi", "Happy hour food specials", "4:30-close", "Half off certain starters and maki rolls", "624 Davis St"]
+//    let dinnerArrayThree = ["Bar Louie", "BarLouie", "Appy Hour: Appetizer specials", "4pm-7pm", "Half off flatbreads and select apps", "1520 Sherman Ave"]
+//    let dinnerArrayFour = ["Terra & Vine", "Terra&Vine", "Happy hour food specials", "4:30pm-6:30pm", "$6 Pizzettes - bar area only", "1701 Maple Ave"]
+//    let dinnerArrayFive = ["Bangers & Lace","Bangers&Lace","Happy hour burger combo","4pm-6pm","$15 burger, shot, beer combo","810 Grove St"]
+//    let dinnerArraySix = ["Celtic Knot", "CelticKnot", "Appetizer, entree, and dessert specials", "4pm-9pm", "Appetizer, entree, and dessert specials - see website for details", "626 Church St"]
+//    let dinnerArraySeven = ["Stacked & Folded","Stacked&Folded","Happy hour bar bites","4pm-6:30pm","$7 bar bite options (change daily)","824 Noyes St"]
+//    let dinnerArrayEight = ["","","","","",""]
+//    let dinnerArrayNine = ["","","","","",""]
+//    let dinnerArrayTen = ["","","","","",""]
 
     
     
-    let drinksCount = 8
+//    let drinksCount = 8
     
-    let drinksArrayOne = ["Prairie Moon", "PrairieMoon", "Happy hour drink specials", "4pm-6pm", "$6 wine glasses, $4 pints, and $5 cocktails", "1635 Chicago Ave"]
-    let drinksArrayTwo = ["Koi", "Koi", "Happy hour cocktails", "4:30pm-6:30pm", "Half price specialty cocktails", "624 Davis St"]
-    let drinksArrayThree = ["Little Mexican Cafe", "LittleMexicanCafe", "Happy hour drink specials", "4pm-7pm", "$5 margaritas and glasses of wine (House Chardonnay or Cabernet only)", "1010 Church St"]
-    let drinksArrayFour = ["Terra & Vine", "Terra&Vine", "Happy hour drink specials", "4:30pm-6:30pm", "$3 beer, $5 glasses of wine, $7 Hay Ride whiskey cocktails", "1010 Church St"]
-    let drinksArrayFive = ["Celtic Knot", "CelticKnot", "All day drink specials", "All Day", "$4 Smithwicks pints, $3 Warsteiner Pilsner, $5 whiskey sours", "626 Church St"]
-    let drinksArraySix = ["Stacked & Folded","Stacked&Folded","Happy hour drink specials","4pm-6:30pm","$3 beers, $4 mules, $4 white claws","824 Noyes St"]
-    let drinksArraySeven = ["Bangers & Lace","Bangers&Lace","Happy hour combo","4pm-6pm","$15 burger, shot, beer combo","810 Grove St"]
-    let drinksArrayEight = ["Cupitol","Cupitol","Happy hour - alcoholic drink specials","4pm-6pm","$5 wine, $5 beer, $3 prosecco, 1/2 off cinnamon old fashioned","812 Grove St"]
-    let drinksArrayNine = ["","","","","",""]
-    let drinksArrayTen = ["","","","","",""]
+//    let drinksArrayOne = ["Prairie Moon", "PrairieMoon", "Happy hour drink specials", "4pm-6pm", "$6 wine glasses, $4 pints, and $5 cocktails", "1635 Chicago Ave"]
+//    let drinksArrayTwo = ["Koi", "Koi", "Happy hour cocktails", "4:30pm-6:30pm", "Half price specialty cocktails", "624 Davis St"]
+//    let drinksArrayThree = ["Little Mexican Cafe", "LittleMexicanCafe", "Happy hour drink specials", "4pm-7pm", "$5 margaritas and glasses of wine (House Chardonnay or Cabernet only)", "1010 Church St"]
+//    let drinksArrayFour = ["Terra & Vine", "Terra&Vine", "Happy hour drink specials", "4:30pm-6:30pm", "$3 beer, $5 glasses of wine, $7 Hay Ride whiskey cocktails", "1010 Church St"]
+//    let drinksArrayFive = ["Celtic Knot", "CelticKnot", "All day drink specials", "All Day", "$4 Smithwicks pints, $3 Warsteiner Pilsner, $5 whiskey sours", "626 Church St"]
+//    let drinksArraySix = ["Stacked & Folded","Stacked&Folded","Happy hour drink specials","4pm-6:30pm","$3 beers, $4 mules, $4 white claws","824 Noyes St"]
+//    let drinksArraySeven = ["Bangers & Lace","Bangers&Lace","Happy hour combo","4pm-6pm","$15 burger, shot, beer combo","810 Grove St"]
+//    let drinksArrayEight = ["Cupitol","Cupitol","Happy hour - alcoholic drink specials","4pm-6pm","$5 wine, $5 beer, $3 prosecco, 1/2 off cinnamon old fashioned","812 Grove St"]
+//    let drinksArrayNine = ["","","","","",""]
+//    let drinksArrayTen = ["","","","","",""]
 
     
 
     //TUESDAY PROMOTIONS
     
-   // let dinnerCount = 7
+    let dinnerCount = 7
     
-   // let dinnerArrayThree = ["Prairie Moon", "PrairieMoon", "Happy hour food specials", "4pm-6pm", "$6 Little Plates and Raw Bar deals", "1635 Chicago Ave"]
-   // let dinnerArraySeven = ["Koi", "Koi", "Maki roll and starter specials", "4:30-close", "Half off certain starters and maki rolls", "624 Davis St"]
-    // let dinnerArraySix = ["Found Kitchen", "Found", "Happy hour bites", "4pm-6pm", "Select menu bites for $5", "1631 Chicago Ave"]
-    // let dinnerArrayTwo = ["Bar Louie", "BarLouie", "Half off burgers and Appy Hour", "4pm or 5pm", "50% off craft burgers 5pm-close / Appy Hour 4-7pm", "1520 Sherman Ave"]
-    // let dinnerArrayFive = ["Terra & Vine", "Terra&Vine", "$6 Pizzettes", "4:30pm-6:30pm", "1701 Maple Ave"]
-    // let dinnerArrayOne = ["Stacked & Folded","Stacked&Folded","Happy hour bar bites","4pm-6:30pm","$7 bar bite options (change daily)","824 Noyes St"]
-    // let dinnerArrayFour = ["Celtic Knot", "CelticKnot", "Appetizer, entree, and dessert specials", "4pm-9pm", "Appetizer, entree, and dessert specials - see website for details", "626 Church St"]
-    // let dinnerArrayEight = ["","","","","",""]
-    // let dinnerArrayNine = ["","","","","",""]
-    // let dinnerArrayTen = ["","","","","",""]
+    let dinnerArrayThree = ["Prairie Moon", "PrairieMoon", "Happy hour food specials", "4pm-6pm", "$6 Little Plates and Raw Bar deals", "1635 Chicago Ave"]
+    let dinnerArraySeven = ["Koi", "Koi", "Maki roll and starter specials", "4:30-close", "Half off certain starters and maki rolls", "624 Davis St"]
+     let dinnerArraySix = ["Found Kitchen", "Found", "Happy hour bites", "4pm-6pm", "Select menu bites for $5", "1631 Chicago Ave"]
+     let dinnerArrayTwo = ["Bar Louie", "BarLouie", "Half off burgers and Appy Hour", "4pm or 5pm", "50% off craft burgers 5pm-close / Appy Hour 4-7pm", "1520 Sherman Ave"]
+     let dinnerArrayFive = ["Terra & Vine", "Terra&Vine", "Happy Hour Pizzettes", "4:30pm-6:30pm", "Pizzettes for $6", "1701 Maple Ave"]
+     let dinnerArrayOne = ["Stacked & Folded","Stacked&Folded","Happy hour bar bites","4pm-6:30pm","$7 bar bite options (change daily)","824 Noyes St"]
+     let dinnerArrayFour = ["Celtic Knot", "CelticKnot", "Appetizer, entree, and dessert specials", "4pm-9pm", "Appetizer, entree, and dessert specials - see website for details", "626 Church St"]
+     let dinnerArrayEight = ["","","","","",""]
+     let dinnerArrayNine = ["","","","","",""]
+     let dinnerArrayTen = ["","","","","",""]
 
     
-    // let drinksCount = 10
+     let drinksCount = 10
     
-    // let drinksArrayOne = ["Whiskey Thief", "WhiskeyThief", "Drink Specials and Trivia Night", "Starting at 8pm", "$3.50 Old Style, $15 buckets, $4 rotating pints", "616 Davis St"]
-    // let drinksArrayFour = ["Prairie Moon", "PrairieMoon", "Happy hour drink specials", "4pm-6pm", "$6 wine glasses, $4 pints, and $5 cocktails", "1635 Chicago Ave"]
-    // let drinksArraySeven = ["Koi", "Koi", "Happy hour cocktails", "4:30pm-6:30pm", "Half price specialty cocktails", "624 Davis St"]
-    // let drinksArrayTwo = ["Little Mexican Cafe", "LittleMexicanCafe", "Happy hour drink specials", "4pm-7pm", "$5 margaritas and glasses of wine (House Chardonnay or Cabernet only)", "1010 Church St"]
-    // let drinksArrayEight = ["Terra & Vine", "Terra&Vine", "Happy hour drink specials", "4:30pm-6:30pm", "$3 beer, $5 glasses of wine, $7 Hay Ride whiskey cocktails", "1010 Church St"]
-    // let drinksArrayThree = ["Celtic Knot", "CelticKnot", "All day drink specials", "All Day", "$4 Kilkenny pints, $3 Warsteiner Pilsner, $5 whiskey sours", "626 Church St"]
-    // let drinksArrayEight = ["Stacked & Folded","Stacked&Folded","Happy hour drink specials","4pm-6:30pm","$3 beers, $4 mules, $4 white claws","824 Noyes St"]
-    // let drinksArrayFive = ["Bangers & Lace","Bangers&Lace","Any 16oz beer for $5","All day","Any 16oz draught beer, only $5","810 Grove St"]
-    // let drinksArrayNine = ["Cupitol","Cupitol","Happy hour - alcoholic drink specials","4pm-6pm","$5 wine, $5 beer, $3 prosecco, 1/2 off cinnamon old fashioned","812 Grove St"]
-    // let drinksArrayTen = ["Found Kitchen","Found","Happy hour wine and beer","4pm-6pm","Select glasses of wine and beer for $5","1631 Chicago Ave"]
+     let drinksArrayOne = ["Whiskey Thief", "WhiskeyThief", "Drink Specials and Trivia Night", "Starting at 8pm", "$3.50 Old Style, $15 buckets, $4 rotating pints", "616 Davis St"]
+     let drinksArrayFour = ["Prairie Moon", "PrairieMoon", "Happy hour drink specials", "4pm-6pm", "$6 wine glasses, $4 pints, and $5 cocktails", "1635 Chicago Ave"]
+     let drinksArraySeven = ["Koi", "Koi", "Happy hour cocktails", "4:30pm-6:30pm", "Half price specialty cocktails", "624 Davis St"]
+     let drinksArrayTwo = ["Little Mexican Cafe", "LittleMexicanCafe", "Happy hour drink specials", "4pm-7pm", "$5 margaritas and glasses of wine (House Chardonnay or Cabernet only)", "1010 Church St"]
+     let drinksArrayEight = ["Terra & Vine", "Terra&Vine", "Happy hour drink specials", "4:30pm-6:30pm", "$3 beer, $5 glasses of wine, $7 Hay Ride whiskey cocktails", "1010 Church St"]
+     let drinksArrayThree = ["Celtic Knot", "CelticKnot", "All day drink specials", "All Day", "$4 Kilkenny pints, $3 Warsteiner Pilsner, $5 whiskey sours", "626 Church St"]
+     let drinksArraySix = ["Stacked & Folded","Stacked&Folded","Happy hour drink specials","4pm-6:30pm","$3 beers, $4 mules, $4 white claws","824 Noyes St"]
+     let drinksArrayFive = ["Bangers & Lace","Bangers&Lace","Any 16oz beer for $5","All day","Any 16oz draught beer, only $5","810 Grove St"]
+     let drinksArrayNine = ["Cupitol","Cupitol","Happy hour - alcoholic drink specials","4pm-6pm","$5 wine, $5 beer, $3 prosecco, 1/2 off cinnamon old fashioned","812 Grove St"]
+     let drinksArrayTen = ["Found Kitchen","Found","Happy hour wine and beer","4pm-6pm","Select glasses of wine and beer for $5","1631 Chicago Ave"]
     
     
     //WEDNESDAY PROMOTIONS
