@@ -126,11 +126,13 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+//        var restaurantNameOne = restaurantName1 as! String
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for:  indexPath) as! CustomMessageCell
         
         cell.messageBody.text = textArray[indexPath.row]
         cell.avatarImageView.image = UIImage(named: pictureArray[indexPath.row])
-        cell.promotionDescription.text = restaurantNameArray[indexPath.row]
+        cell.promotionDescription.text = restaurantNameArray[indexPath.row] as? String
         
 //        if let color = UIColor.flatWhite()?.darken(byPercentage: (CGFloat(indexPath.row)/CGFloat(restaurantNameArray.count))/2) {
             

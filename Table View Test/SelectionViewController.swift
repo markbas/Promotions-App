@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestore
 
 class SelectionViewController: UIViewController {
-
+ 
+    
 // MONDAY PROMOTIONS
     
 //    let dinnerCount = 7
@@ -44,6 +47,7 @@ class SelectionViewController: UIViewController {
 
     //TUESDAY PROMOTIONS
     
+       
     let dinnerCount = 7
     
     let dinnerArrayThree = ["Prairie Moon", "PrairieMoon", "Happy hour food specials", "4pm-6pm", "$6 Little Plates and Raw Bar deals", "1635 Chicago Ave"]
@@ -223,7 +227,6 @@ class SelectionViewController: UIViewController {
 
     
     
-    
     @IBOutlet weak var logoLabel: UILabel!
     
     @IBOutlet weak var dinnerButton: UIButton!
@@ -234,10 +237,136 @@ class SelectionViewController: UIViewController {
     
     @IBOutlet weak var questionButton: UILabel!
     
+    var nameTestRestaurant = ""
+    var nameTestRestaurantTwo: [Structure] = []
+    
+    func printTest() {
+        print(nameTestRestaurant)
+    }
     
     
+
+    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+         
+        
+        let db = Firestore.firestore()
+               
+        func loadRestaurantData() {
+            
+            self.nameTestRestaurantTwo = []
+
+            print(nameTestRestaurantTwo)
+            db.collection("names").getDocuments { (querySnapshot, error) in
+              
+              if let e = error {
+                  print("There was an issue retrieving data from Firestore. \(e)")
+              } else {
+                  if let snapshotDocuments = querySnapshot?.documents {
+                      for doc in snapshotDocuments {
+                          let data = doc.data()
+                       // print(doc.data())
+                          if let messageBody = data["Two"] as? String, let messageSender = data["one"] as? String {
+                              let newMessage = Structure(Two: messageBody, one: messageSender)
+                              self.nameTestRestaurantTwo.append(newMessage)
+                            //  print(newMessage)
+                //              DispatchQueue.main.async {
+                  //                   self.tableView.reloadData()
+                    //              let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
+                       //           self.tableView.scrollToRow(at: indexPath, at: .top, animated: false)
+                         //     }
+                          }
+                      }
+                  }
+              }
+          }
+            
+            
+        
+        //  db.collection("names").document("names").getDocument { (document, error) in
+            // if error == nil {
+              //  if document != nil && document!.exists {
+                //     let documentData = document!.data()
+            // }
+           // }
+        //}
+        // print(nameTest)
+        
+         }
+
+        loadRestaurantData()
+        
+        
+        
+        func retreiveData() {
+            nameTestRestaurant = ""
+
+//            db.collection("names").getDocuments() {
+  //              (QuerySnapshot, err) in
+    //            if let err = err {
+      //                        print("Error")
+        //        } else {
+          //          for document in QuerySnapshot!.documents {
+            //                print("document name")
+//              //      }
+  //              }
+    //        }
+            
+            let docRef = db.collection("names").document("names")
+        docRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
+            //    let dataDescriptionTwo = dataDescription["names/names"]
+                //    self.nameTestRestaurant = ""
+                self.nameTestRestaurant.append(dataDescription)
+                print(dataDescription)
+             //   print(self.nameTestRestaurant)
+            //    DispatchQueue.main.async {
+              //      self.reloadInputViews()
+              //  }
+            } else {
+                print("Document does not exist")
+            }
+            }
+           // print(self.nameTestRestaurant)
+        }
+        retreiveData()
+ //       var testTest = retreiveData()
+ //       func testTestTest() {
+ //           print(testTest)
+ //       }
+        
+ //       print(nameTestRestaurant)
+
+        
+                
+//        func retreiveDataTwo() {  db.collection("names").document("names").getDocument { (document, error) in
+  //                if error == nil {
+    //                 if document != nil && document!.exists {
+      //                    let documentData = document!.data()
+        //                if let firestoreData = documentData?["names"] as? String {
+          //                  let newRestaurantName = firestoreData
+                       // if let firestoreData = document!.data() as? String {
+                          //  let newRestuarantName = firestoreData
+            //                self.nameTestRestaurant.append(firestoreData)
+                            
+                      //     DispatchQueue.main.async {
+                        //        self.dinnerButton.reloadData()
+    //                        }
+      //                  }
+                    
+   //                     print(firestoreData)
+              //          print(document!.data())
+ //                 }
+   //              }
+//          }
+      //  }
+  //      retreiveDataTwo()
+        
+    //    printTest()
         
         logoLabel.frame = CGRect(x: (self.view.frame.width)/2-(300/2), y: (self.view.frame.height)/8, width: 300, height: 78)
         
@@ -263,8 +392,8 @@ class SelectionViewController: UIViewController {
         
         
     }
-    
-    
+
+
     @IBAction func dinnerButtonPressed(_ sender: Any) {
         
         performSegue(withIdentifier: "dinnerSegue", sender: self)
@@ -277,11 +406,45 @@ class SelectionViewController: UIViewController {
         
     }
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
+     //   let db = Firestore.firestore()
+        
+     //   nameTestRestaurant = []
+        
+        // print(nameTestRestaurant)
+        
+     //   db.collection("names").document("names").getDocument { (document, error) in
+       //   if error == nil {
+         //    if document != nil && document!.exists {
+           //       let documentData = document!.data()
+             //   if let firestoreData = documentData?["names"] as? String {
+               //     let newRestaurantName = firestoreData
+                 //   self.nameTestRestaurant.append(newRestaurantName)
+            //    }
+                
+                
+              //  print(documentData ?? String())
+                
+//                self.nameTestRestaurant.append(documentData as! String)
+        //  }
+      //   }
+      //  }
+
+        
+        
         if segue.identifier == "dinnerSegue" {
             
             let destinationVC = segue.destination as! TableViewController
+            
+            // let db = Firestore.firestore()
+            
+                        
+           
+            
+            let dinnerRestaurantOne = "Mark's Restaurant"
+                       
             
             destinationVC.restaurantName1 = dinnerArrayOne[0]
             destinationVC.restaurantName2 = dinnerArrayTwo[0]
@@ -366,8 +529,10 @@ class SelectionViewController: UIViewController {
         if segue.identifier == "drinksSegue" {
             
             let destinationVC = segue.destination as! TableViewController
+            
+            let dataTest = nameTestRestaurantTwo[0]
 
-            destinationVC.restaurantName1 = drinksArrayOne[0]
+            destinationVC.restaurantName1 = dataTest.one
             destinationVC.restaurantName2 = drinksArrayTwo[0]
             destinationVC.restaurantName3 = drinksArrayThree[0]
             destinationVC.restaurantName4 = drinksArrayFour[0]
