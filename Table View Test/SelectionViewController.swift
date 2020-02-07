@@ -13,38 +13,6 @@ import FirebaseFirestore
 class SelectionViewController: UIViewController {
  
     
-// MONDAY PROMOTIONS
-    
-//    let dinnerCount = 7
-    
-//    let dinnerArrayOne = ["Prairie Moon", "PrairieMoon", "Happy hour food specials", "4pm-6pm", "$6 Little Plates and Raw Bar deals", "1635 Chicago Ave"]
-//    let dinnerArrayTwo = ["Koi", "Koi", "Happy hour food specials", "4:30-close", "Half off certain starters and maki rolls", "624 Davis St"]
-//    let dinnerArrayThree = ["Bar Louie", "BarLouie", "Appy Hour: Appetizer specials", "4pm-7pm", "Half off flatbreads and select apps", "1520 Sherman Ave"]
-//    let dinnerArrayFour = ["Terra & Vine", "Terra&Vine", "Happy hour food specials", "4:30pm-6:30pm", "$6 Pizzettes - bar area only", "1701 Maple Ave"]
-//    let dinnerArrayFive = ["Bangers & Lace","Bangers&Lace","Happy hour burger combo","4pm-6pm","$15 burger, shot, beer combo","810 Grove St"]
-//    let dinnerArraySix = ["Celtic Knot", "CelticKnot", "Appetizer, entree, and dessert specials", "4pm-9pm", "Appetizer, entree, and dessert specials - see website for details", "626 Church St"]
-//    let dinnerArraySeven = ["Stacked & Folded","Stacked&Folded","Happy hour bar bites","4pm-6:30pm","$7 bar bite options (change daily)","824 Noyes St"]
-//    let dinnerArrayEight = ["","","","","",""]
-//    let dinnerArrayNine = ["","","","","",""]
-//    let dinnerArrayTen = ["","","","","",""]
-
-    
-    
-//    let drinksCount = 8
-    
-//    let drinksArrayOne = ["Prairie Moon", "PrairieMoon", "Happy hour drink specials", "4pm-6pm", "$6 wine glasses, $4 pints, and $5 cocktails", "1635 Chicago Ave"]
-//    let drinksArrayTwo = ["Koi", "Koi", "Happy hour cocktails", "4:30pm-6:30pm", "Half price specialty cocktails", "624 Davis St"]
-//    let drinksArrayThree = ["Little Mexican Cafe", "LittleMexicanCafe", "Happy hour drink specials", "4pm-7pm", "$5 margaritas and glasses of wine (House Chardonnay or Cabernet only)", "1010 Church St"]
-//    let drinksArrayFour = ["Terra & Vine", "Terra&Vine", "Happy hour drink specials", "4:30pm-6:30pm", "$3 beer, $5 glasses of wine, $7 Hay Ride whiskey cocktails", "1010 Church St"]
-//    let drinksArrayFive = ["Celtic Knot", "CelticKnot", "All day drink specials", "All Day", "$4 Smithwicks pints, $3 Warsteiner Pilsner, $5 whiskey sours", "626 Church St"]
-//    let drinksArraySix = ["Stacked & Folded","Stacked&Folded","Happy hour drink specials","4pm-6:30pm","$3 beers, $4 mules, $4 white claws","824 Noyes St"]
-//    let drinksArraySeven = ["Bangers & Lace","Bangers&Lace","Happy hour combo","4pm-6pm","$15 burger, shot, beer combo","810 Grove St"]
-//    let drinksArrayEight = ["Cupitol","Cupitol","Happy hour - alcoholic drink specials","4pm-6pm","$5 wine, $5 beer, $3 prosecco, 1/2 off cinnamon old fashioned","812 Grove St"]
-//    let drinksArrayNine = ["","","","","",""]
-//    let drinksArrayTen = ["","","","","",""]
-
-    
-
     //TUESDAY PROMOTIONS
     
        
@@ -62,7 +30,6 @@ class SelectionViewController: UIViewController {
      let dinnerArrayTen = ["","","","","",""]
 
     
-     let drinksCount = 10
     
      let drinksArrayOne = ["Whiskey Thief", "WhiskeyThief", "Drink Specials and Trivia Night", "Starting at 8pm", "$3.50 Old Style, $15 buckets, $4 rotating pints", "616 Davis St"]
      let drinksArrayFour = ["Prairie Moon", "PrairieMoon", "Happy hour drink specials", "4pm-6pm", "$6 wine glasses, $4 pints, and $5 cocktails", "1635 Chicago Ave"]
@@ -76,156 +43,6 @@ class SelectionViewController: UIViewController {
      let drinksArrayTen = ["Found Kitchen","Found","Happy hour wine and beer","4pm-6pm","Select glasses of wine and beer for $5","1631 Chicago Ave"]
     
     
-    //WEDNESDAY PROMOTIONS
-    
-    // let dinnerCount = 8
-    
-    // let dinnerArrayFive = ["Prairie Moon", "PrairieMoon", "Happy hour food specials", "4pm-6pm", "$6 Little Plates and Raw Bar deals", "1635 Chicago Ave"]
-    // let dinnerArraySeven = ["Koi", "Koi", "Maki roll and starter specials", "4:30-close", "Half off certain starters and maki rolls", "624 Davis St"]
-    // let dinnerArrayEight = ["Found Kitchen", "Found", "Happy hour bites", "4pm-6pm", "Select menu bites for $5", "1631 Chicago Ave"]
-    // let dinnerArrayOne = ["Bar Louie", "BarLouie", "Appy Hour: Appetizer specials", "4pm-7pm", "Half off flatbreads and select apps", "1520 Sherman Ave"]
-    // let dinnerArraySix = ["Terra & Vine", "Terra&Vine", "$6 Pizzettes", "4:30pm-6:30pm", "1701 Maple Ave"]
-    // let dinnerArrayThree = ["Cupitol","Cupitol","Happy hour - alcoholic drink specials","4pm-6pm","$5 wine, $5 beer, $3 prosecco, 1/2 off cinnamon old fashioned","812 Grove St"]
-    // let dinnerArrayTwo = ["Celtic Knot", "CelticKnot", "Appetizer, entree, and dessert specials", "4pm-9pm", "Appetizer, entree, and dessert specials - see website for details", "626 Church St"]
-    // let dinnerArrayFour = ["Stacked & Folded","Stacked&Folded","Happy hour bar bites","4pm-6:30pm","$7 bar bite options (change daily)","824 Noyes St"]
-    // let dinnerArrayNine = ["","","","","",""]
-    // let dinnerArrayTen = ["","","","","",""]
-    
-    
-    // let drinksCount = 10
-    
-    // let drinksArrayFour = ["Prairie Moon", "PrairieMoon", "Happy hour drink specials", "4pm-6pm", "$6 wine glasses, $4 pints, and $5 cocktails", "1635 Chicago Ave"]
-    // let drinksArraySeven = ["Koi", "Koi", "Happy hour cocktails", "4:30pm-6:30pm", "Half price specialty cocktails", "624 Davis St"]
-    // let drinksArrayFive = ["Bar Louie", "BarLouie", "All day drink specials", "All Day", "$1.25 select domestic bottles and $5.25 martinis", "1520 Sherman Ave"]
-    // let drinksArraySix = ["Little Mexican Cafe", "LittleMexicanCafe", "Happy hour drink specials", "4pm-7pm", "$5 margaritas and glasses of wine (House Chardonnay or Cabernet only)", "1010 Church St"]
-    // let drinksArrayEight = ["Terra & Vine", "Terra&Vine", "Happy hour drink specials", "4:30pm-6:30pm", "$3 beer, $5 glasses of wine, $7 Hay Ride whiskey cocktails", "1010 Church St"]
-    // let drinksArrayOne = ["Celtic Knot", "CelticKnot", "All day drink specials", "All Day", "$4 Dovetail Hefeweiss pints, $3 Warsteiner Pilsner, $5 whiskey sours", "626 Church St"]
-    // let drinksArrayThree = ["Stacked & Folded","Stacked&Folded","Happy hour drink specials","4pm-6:30pm","$3 beers, $4 mules, $4 white claws","824 Noyes St"]
-    // let drinksArrayTwo = ["Bangers & Lace","Bangers&Lace","1/2 priced wine","4pm-6pm","All wine bottles 1/2 off","810 Grove St"]
-    // let drinksArrayNine = ["Cupitol","Cupitol","Happy hour - alcoholic drink specials","4pm-6pm","$5 wine, $5 beer, $3 prosecco, 1/2 off cinnamon old fashioned","812 Grove St"]
-    // let drinksArrayTen = ["Found Kitchen","Found","Happy hour wine and beer","4pm-6pm","Select glasses of wine and beer for $5","1631 Chicago Ave"]
-    
-    
-    //THURSDAY PROMOTIONS
-    
-    // let dinnerCount = 9
-    
-    // let dinnerArrayOne = ["Prairie Moon", "PrairieMoon", "Happy hour food specials", "4pm-6pm", "$6 Little Plates and Raw Bar deals", "1635 Chicago Ave"]
-    // let dinnerArrayTwo = ["Koi", "Koi", "Maki roll and starter specials", "4:30-close", "Half off certain starters and maki rolls", "624 Davis St"]
-    // let dinnerArrayThree = ["Found Kitchen", "Found", "Happy hour bites", "4pm-6pm", "Select menu bites for $5", "1631 Chicago Ave"]
-    // let dinnerArrayFour = ["Bar Louie", "BarLouie", "Appy Hour: Appetizer specials", "4pm-7pm and 10pm-close", "Half off flatbreads and select apps", "1520 Sherman Ave"]
-    // let dinnerArrayFive = ["Terra & Vine", "Terra&Vine", "$6 Pizzettes", "4:30pm-6:30pm", "1701 Maple Ave"]
-    // let dinnerArraySix = ["Kokomo", "Kokomo", "$12.99 All you can eat lunch buffet", "11:30am-3:00pm", "$12.99 All you can eat Korean lunch buffet", "1639 Orrington Ave"]
-    // let dinnerArraySeven = ["Celtic Knot", "CelticKnot", "Appetizer, entree, and dessert specials", "4pm-9pm", "Appetizer, entree, and dessert specials - see website for details", "626 Church St"]
-    // let dinnerArrayEight = ["Stacked & Folded","Stacked&Folded","Happy hour bar bites","4pm-6:30pm","$7 bar bite options (change daily)","824 Noyes St"]
-    // let dinnerArrayNine = ["Bangers & Lace","Bangers&Lace","$3 hot dogs","4pm-6pm","$3 hot dogs with draught beer purchase (Wildcard required)","810 Grove St"]
-    // let dinnerArrayTen = ["","","","","",""]
-    
-    
-    // let drinksCount = 10
-    
-    // let drinksArrayOne = ["Whiskey Thief", "WhiskeyThief", "Sip Happens: Wine specials", "Thursday nights", "20% off bottles of wine", "616 Davis St"]
-    // let drinksArraySix = ["Prairie Moon", "PrairieMoon", "Happy hour drink specials", "4pm-6pm", "$6 wine glasses, $4 pints, and $5 cocktails", "1635 Chicago Ave"]
-    // let drinksArrayEight = ["Koi", "Koi", "Happy hour cocktails", "4:30pm-6:30pm", "Half price specialty cocktails", "624 Davis St"]
-    // let drinksArraySeven = ["Bar Louie", "BarLouie", "Martini Madness drink special", "All Day", "$5.25 Signature Martinis", "1520 Sherman Ave"]
-    // let drinksArrayFive = ["Little Mexican Cafe", "LittleMexicanCafe", "Happy hour drink specials", "4pm-7pm", "$5 margaritas and glasses of wine (House Chardonnay or Cabernet only)", "1010 Church St"]
-    // let drinksArrayNine = ["Terra & Vine", "Terra&Vine", "Happy hour drink specials", "4:30pm-6:30pm", "$3 beer, $5 glasses of wine, $7 Hay Ride whiskey cocktails", "1010 Church St"]
-    // let drinksArrayTwo = ["Celtic Knot", "CelticKnot", "All day drink specials", "All Day", "$4 Snakebite pints, $3 Warsteiner Pilsner, $5 whiskey sours", "626 Church St"]
-    // let drinksArrayFour = ["Stacked & Folded","Stacked&Folded","Happy hour drink specials","4pm-6:30pm","$3 beers, $4 mules, $4 white claws","824 Noyes St"]
-    // let drinksArrayThree = ["Cupitol","Cupitol","Happy hour - alcoholic drink specials","4pm-6pm","$5 wine, $5 beer, $3 prosecco, 1/2 off cinnamon old fashioned","812 Grove St"]
-    // let drinksArrayTen = ["Found Kitchen","Found","Happy hour wine and beer","4pm-6pm","Select glasses of wine and beer for $5","1631 Chicago Ave"]
-
-    
-    //FRIDAY PROMOTIONS
-    
-    // let dinnerCount = 6
-    
-    // let dinnerArraySix = ["Prairie Moon", "PrairieMoon", "Happy hour food specials", "4pm-6pm", "$6 Little Plates and Raw Bar deals", "1635 Chicago Ave"]
-    // let dinnerArrayFive = ["Koi", "Koi", "Maki roll and starter specials", "4:30-close", "Half off certain starters and maki rolls", "624 Davis St"]
-    // let dinnerArrayFour = ["Found Kitchen", "Found", "Happy hour bites", "4pm-6pm", "Select menu bites for $5", "1631 Chicago Ave"]
-    // let dinnerArrayThree = ["Bar Louie", "BarLouie", "Appy Hour: Appetizer specials", "4pm-7pm", "Half off flatbreads and select apps", "1520 Sherman Ave"]
-    // let dinnerArrayTwo = ["Stacked & Folded","Stacked&Folded","Happy hour bar bites","4pm-6:30pm","$7 bar bite options (change daily)","824 Noyes St"]
-    // let dinnerArrayOne = ["Celtic Knot", "CelticKnot", "Appetizer, entree, and dessert specials", "4pm-10pm", "Appetizer, entree, and dessert specials - see website for details", "626 Church St"]
-    // let dinnerArraySeven = ["","","","","",""]
-    // let dinnerArrayEight = ["","","","","",""]
-    // let dinnerArrayNine = ["","","","","",""]
-    // let dinnerArrayTen = ["","","","","",""]
-    
-    
-    // let drinksCount = 6
-    
-    // let drinksArrayOne = ["Prairie Moon", "PrairieMoon", "Happy hour drink specials", "4pm-6pm", "$6 wine glasses, $4 pints, and $5 cocktails", "1635 Chicago Ave"]
-    // let drinksArrayTwo = ["Koi", "Koi", "Happy hour cocktails", "4:30pm-6:30pm", "Half price specialty cocktails", "624 Davis St"]
-    // let drinksArrayThree = ["Celtic Knot", "CelticKnot", "All day drink specials", "All Day", "$3 Warsteiner Pilsner and $5 whiskey sours", "626 Church St"]
-    // let drinksArrayFour = ["Stacked & Folded","Stacked&Folded","Happy hour drink specials","4pm-6:30pm","$3 beers, $4 mules, $4 white claws","824 Noyes St"]
-    // let drinksArrayFive = ["Cupitol","Cupitol","Happy hour - alcoholic drink specials","4pm-6pm","$5 wine, $5 beer, $3 prosecco, 1/2 off cinnamon old fashioned","812 Grove St"]
-    // let drinksArraySix = ["Found Kitchen","Found","Happy hour wine and beer","4pm-6pm", "Select wine glasses and beer for $5","1631 Chicago Ave"]
-    // let drinksArraySeven = ["","","","","",""]
-    // let drinksArrayEight = ["","","","","",""]
-    // let drinksArrayNine = ["","","","","",""]
-    // let drinksArrayTen = ["","","","","",""]
-    
-    
-    //SATURDAY PROMOTIONS
-    
-    // let dinnerCount = 3
-    
-    // let dinnerArrayTwo = ["Prairie Moon", "PrairieMoon", "Happy hour food specials", "4pm-6pm", "$6 Little Plates and Raw Bar deals", "1635 Chicago Ave"]
-    // let dinnerArrayThree = ["Koi", "Koi", "Maki roll and starter specials", "4:30-close", "Half off certain starters and maki rolls", "624 Davis St"]
-    // let dinnerArraySix = ["","","","","",""]
-    // let dinnerArrayFour = ["","","","","",""]
-    // let dinnerArrayFive = ["","","","","",""]
-    // let dinnerArrayOne = ["Celtic Knot", "CelticKnot", "Appetizer, entree, and dessert specials", "4pm-10pm", "Appetizer, entree, and dessert specials - see website for details", "626 Church St"]
-    // let dinnerArraySeven = ["","","","","",""]
-    // let dinnerArrayEight = ["","","","","",""]
-    // let dinnerArrayNine = ["","","","","",""]
-    // let dinnerArrayTen = ["","","","","",""]
-    
-    
-    // let drinksCount = 3
-    
-    // let drinksArrayTwo = ["Prairie Moon", "PrairieMoon", "Happy hour drink specials", "4pm-6pm", "$6 wine glasses, $4 pints, and $5 cocktails", "1635 Chicago Ave"]
-    // let drinksArrayOne = ["Koi", "Koi", "Happy hour cocktails", "4:30pm-6:30pm", "Half price specialty cocktails", "624 Davis St"]
-    // let drinksArrayThree = ["Celtic Knot", "CelticKnot", "All day drink specials", "All Day", "$3 Warsteiner Pilsner and $5 whiskey sours", "626 Church St"]
-    // let drinksArrayFour = ["","","","","",""]
-    // let drinksArrayFive = ["","","","","",""]
-    // let drinksArraySix = ["","","","","",""]
-    // let drinksArraySeven = ["","","","","",""]
-    // let drinksArrayEight = ["","","","","",""]
-    // let drinksArrayNine = ["","","","","",""]
-    // let drinksArrayTen = ["","","","","",""]
-
-    
-    //SUNDAY PROMOTIONS
-    
-    // let dinnerCount = 3
-    
-    // let dinnerArrayThree = ["Prairie Moon", "PrairieMoon", "Happy hour food specials", "4pm-6pm", "$6 Little Plates and Raw Bar deals", "1635 Chicago Ave"]
-    // let dinnerArrayOne = ["Koi", "Koi", "Maki roll and starter specials", "4:30-close", "Half off certain starters and maki rolls", "624 Davis St"]
-    // let dinnerArraySix = ["","","","","",""]
-    // let dinnerArrayFour = ["","","","","",""]
-    // let dinnerArrayFive = ["","","","","",""]
-    // let dinnerArrayTwo = ["Celtic Knot", "CelticKnot", "Appetizer, entree, and dessert specials", "4pm-10pm", "Appetizer, entree, and dessert specials - see website for details", "626 Church St"]
-    // let dinnerArraySeven = ["","","","","",""]
-    // let dinnerArrayEight = ["","","","","",""]
-    // let dinnerArrayNine = ["","","","","",""]
-    // let dinnerArrayTen = ["","","","","",""]
-    
-    
-    // let drinksCount = 4
-    
-    // let drinksArrayFour = ["Prairie Moon", "PrairieMoon", "Happy hour drink specials", "4pm-6pm", "$6 wine glasses, $4 pints, and $5 cocktails", "1635 Chicago Ave"]
-    // let drinksArrayThree = ["Koi", "Koi", "Happy hour cocktails", "4:30pm-6:30pm", "Half price specialty cocktails", "624 Davis St"]
-    // let drinksArrayTwo = ["Celtic Knot", "CelticKnot", "All day drink specials", "All Day", "$3 Warsteiner Pilsner and $5 whiskey sours", "626 Church St"]
-    // let drinksArrayOne = ["Terra & Vine","Terra&Vine","Happy hour drink specials","4:30-6:30pm","$3 beer, $5 glasses of wine, $7 Hay Ride whiskey cocktails","1010 Church St"]
-    // let drinksArrayFive = ["","","","","",""]
-    // let drinksArraySix = ["","","","","",""]
-    // let drinksArraySeven = ["","","","","",""]
-    // let drinksArrayEight = ["","","","","",""]
-    // let drinksArrayNine = ["","","","","",""]
-    // let drinksArrayTen = ["","","","","",""]
-
-    
     
     @IBOutlet weak var logoLabel: UILabel!
     
@@ -237,29 +54,19 @@ class SelectionViewController: UIViewController {
     
     @IBOutlet weak var questionButton: UILabel!
     
-    var nameTestRestaurant = ""
-    var nameTestRestaurantTwo: [Structure] = []
-    
-    func printTest() {
-        print(nameTestRestaurant)
-    }
-    
-    
+
+    var firestoreData: [Structure] = []
 
     
-        
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         
-        
         let db = Firestore.firestore()
                
-        func loadRestaurantData() {
+        func loadFirestoreData() {
             
-            self.nameTestRestaurantTwo = []
+            self.firestoreData = []
 
-            print(nameTestRestaurantTwo)
             db.collection("names").getDocuments { (querySnapshot, error) in
               
               if let e = error {
@@ -268,10 +75,9 @@ class SelectionViewController: UIViewController {
                   if let snapshotDocuments = querySnapshot?.documents {
                       for doc in snapshotDocuments {
                           let data = doc.data()
-                       // print(doc.data())
-                          if let messageBody = data["Two"] as? String, let messageSender = data["one"] as? String {
-                              let newMessage = Structure(Two: messageBody, one: messageSender)
-                              self.nameTestRestaurantTwo.append(newMessage)
+                          if let messageBody = data["Two"] as? String, let messageSender = data["one"] as? String, let firestoreTimeOne = data["drinksTimeOne"] as? String, let drinksNumberOne = data["drinksNumber"] as? Int {
+                            let newMessage = Structure(Two: messageBody, one: messageSender, drinksTimeOne: firestoreTimeOne, drinksNumber: drinksNumberOne)
+                              self.firestoreData.append(newMessage)
                             //  print(newMessage)
                 //              DispatchQueue.main.async {
                   //                   self.tableView.reloadData()
@@ -283,90 +89,10 @@ class SelectionViewController: UIViewController {
                   }
               }
           }
-            
-            
-        
-        //  db.collection("names").document("names").getDocument { (document, error) in
-            // if error == nil {
-              //  if document != nil && document!.exists {
-                //     let documentData = document!.data()
-            // }
-           // }
-        //}
-        // print(nameTest)
-        
          }
 
-        loadRestaurantData()
+        loadFirestoreData()
         
-        
-        
-        func retreiveData() {
-            nameTestRestaurant = ""
-
-//            db.collection("names").getDocuments() {
-  //              (QuerySnapshot, err) in
-    //            if let err = err {
-      //                        print("Error")
-        //        } else {
-          //          for document in QuerySnapshot!.documents {
-            //                print("document name")
-//              //      }
-  //              }
-    //        }
-            
-            let docRef = db.collection("names").document("names")
-        docRef.getDocument { (document, error) in
-            if let document = document, document.exists {
-                let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
-            //    let dataDescriptionTwo = dataDescription["names/names"]
-                //    self.nameTestRestaurant = ""
-                self.nameTestRestaurant.append(dataDescription)
-                print(dataDescription)
-             //   print(self.nameTestRestaurant)
-            //    DispatchQueue.main.async {
-              //      self.reloadInputViews()
-              //  }
-            } else {
-                print("Document does not exist")
-            }
-            }
-           // print(self.nameTestRestaurant)
-        }
-        retreiveData()
- //       var testTest = retreiveData()
- //       func testTestTest() {
- //           print(testTest)
- //       }
-        
- //       print(nameTestRestaurant)
-
-        
-                
-//        func retreiveDataTwo() {  db.collection("names").document("names").getDocument { (document, error) in
-  //                if error == nil {
-    //                 if document != nil && document!.exists {
-      //                    let documentData = document!.data()
-        //                if let firestoreData = documentData?["names"] as? String {
-          //                  let newRestaurantName = firestoreData
-                       // if let firestoreData = document!.data() as? String {
-                          //  let newRestuarantName = firestoreData
-            //                self.nameTestRestaurant.append(firestoreData)
-                            
-                      //     DispatchQueue.main.async {
-                        //        self.dinnerButton.reloadData()
-    //                        }
-      //                  }
-                    
-   //                     print(firestoreData)
-              //          print(document!.data())
- //                 }
-   //              }
-//          }
-      //  }
-  //      retreiveDataTwo()
-        
-    //    printTest()
         
         logoLabel.frame = CGRect(x: (self.view.frame.width)/2-(300/2), y: (self.view.frame.height)/8, width: 300, height: 78)
         
@@ -409,42 +135,11 @@ class SelectionViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
-     //   let db = Firestore.firestore()
-        
-     //   nameTestRestaurant = []
-        
-        // print(nameTestRestaurant)
-        
-     //   db.collection("names").document("names").getDocument { (document, error) in
-       //   if error == nil {
-         //    if document != nil && document!.exists {
-           //       let documentData = document!.data()
-             //   if let firestoreData = documentData?["names"] as? String {
-               //     let newRestaurantName = firestoreData
-                 //   self.nameTestRestaurant.append(newRestaurantName)
-            //    }
-                
-                
-              //  print(documentData ?? String())
-                
-//                self.nameTestRestaurant.append(documentData as! String)
-        //  }
-      //   }
-      //  }
-
-        
         
         if segue.identifier == "dinnerSegue" {
             
             let destinationVC = segue.destination as! TableViewController
-            
-            // let db = Firestore.firestore()
-            
-                        
-           
-            
-            let dinnerRestaurantOne = "Mark's Restaurant"
-                       
+
             
             destinationVC.restaurantName1 = dinnerArrayOne[0]
             destinationVC.restaurantName2 = dinnerArrayTwo[0]
@@ -530,11 +225,12 @@ class SelectionViewController: UIViewController {
             
             let destinationVC = segue.destination as! TableViewController
             
-            let dataTest = nameTestRestaurantTwo[0]
-
+            let dataTest = firestoreData[0]
+            let drinksCount = dataTest.drinksNumber
+            
             destinationVC.restaurantName1 = dataTest.one
-            destinationVC.restaurantName2 = drinksArrayTwo[0]
-            destinationVC.restaurantName3 = drinksArrayThree[0]
+            destinationVC.restaurantName2 = dataTest.Two
+            destinationVC.restaurantName3 = dataTest.drinksTimeOne
             destinationVC.restaurantName4 = drinksArrayFour[0]
             destinationVC.restaurantName5 = drinksArrayFive[0]
             destinationVC.restaurantName6 = drinksArraySix[0]
@@ -545,8 +241,8 @@ class SelectionViewController: UIViewController {
 
 
             
-            destinationVC.picture1 = drinksArrayOne[1]
-            destinationVC.picture2 = drinksArrayTwo[1]
+            destinationVC.picture1 = dataTest.Two
+            destinationVC.picture2 = dataTest.Two
             destinationVC.picture3 = drinksArrayThree[1]
             destinationVC.picture4 = drinksArrayFour[1]
             destinationVC.picture5 = drinksArrayFive[1]

@@ -12,4 +12,7 @@ struct Structure {
     
     let Two: String
     let one: String
+    let drinksTimeOne: String
+    let drinksNumber: Int
+    
 }
