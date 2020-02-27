@@ -13,7 +13,6 @@ class DataViewController: UIViewController {
 
     let db = Firestore.firestore()
     
-
     
     func retreiveDataOne() {
      
